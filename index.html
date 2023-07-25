@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fruit Brust</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <!-- lato font family -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -37,9 +41,34 @@
       };
     </script>
   </head>
-  <body>
-    <header></header>
-    <main></main>
+  <body class="font-lato">
+    <header>
+      <nav
+        class="flex flex-row items-center justify-evenly bg-base rounded-full py-4 m-6"
+      >
+        <div class="hidden lg:flex gap-7">
+          <p class="text-lg font text-white">Home</p>
+          <p class="text-lg font text-white">About Us</p>
+          <p class="text-lg font text-white">Shop</p>
+          <p class="text-lg font text-white">All Fruits</p>
+        </div>
+        <div class="flex items-center gap-4">
+          <img class="w-9" src="images/logo.png" alt="" />
+          <h2 class="text-4xl font-semibold text-white">Fruit Burst</h2>
+        </div>
+        <div class="relative">
+          <input
+            class="rounded-full px-4 py-1"
+            type="text"
+            placeholder="Search here"
+          />
+          <i
+            class="absolute right-4 top-2 fa fa-search w-6 bg-white text-[#121212]"
+          ></i>
+        </div>
+      </nav>
+    </header>
+    <main class="container mx-auto"></main>
     <footer></footer>
   </body>
 </html>
